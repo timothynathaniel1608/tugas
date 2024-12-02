@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+  int angka[7];
+
+  cout << "Masukkan 7 angka integer:\n";
+  for (int i = 0; i < 7; i++) {
+    cout << "Angka ke-" << i + 1 << ": ";
+    cin >> angka[i];
+  }
+
+  int maksimum = angka[0]; 
+  for (int i = 1; i < 7; i++) {
+    if (angka[i] > maksimum) {
+      maksimum = angka[i];
+    }
+  }
+  cout << "\nNilai maksimum: " << maksimum << endl;
+
+  return 0;
+}
